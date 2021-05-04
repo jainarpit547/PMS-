@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 //import UserList from './components/UserList/User';
 import store from "./store";
 import jwt_decode from "jwt-decode";
@@ -37,7 +37,7 @@ if (localStorage.jwtToken) {
 class App extends Component {
     render() {
         return (
-            <BrowserRouter >
+            <HashRouter >
                 <React.Suspense fallback={loading}>
                     <Switch>
                 
@@ -57,7 +57,7 @@ class App extends Component {
                         </Switch>
                     </Switch>
                 </React.Suspense>
-            </BrowserRouter>
+            </HashRouter>
         );
     }
 }
