@@ -1,0 +1,37 @@
+.technology-card{
+    background: #fff;
+    padding: 20px 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 0.35rem;
+    box-shadow: 0 0 30px 0 rgb(82 63 105 / 5%);
+    border: none;
+}
+
+.technology-icon{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.technology-icon svg, .technology-icon img{
+    width: 50px;
+    height: auto;
+}
+
+.technology-card h5{
+    font-size: 20px;
+    color: #181c32;
+    margin-bottom: 0;
+}
+.technology-action{
+    margin-top: 20px;;
+}
+.technology-action .btn{
+    margin: 0 8px;
+}

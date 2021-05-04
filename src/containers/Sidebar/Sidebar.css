@@ -1,0 +1,244 @@
+.aside {
+    background-color: #1e1e2d;
+    width: 265px;
+}
+.flex-row-auto {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+.flex-column-auto {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+}
+.brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 0 25px;
+    height: 65px;
+}
+.brand-dark .brand {
+    background-color: #1a1a27;
+    box-shadow: none;
+}
+
+.brand .brand-logo img{
+    width: 70px;
+}
+.brand .brand-toggle .svg-icon svg {
+    transition: all .15s ease;
+}
+
+.svg-icon.svg-icon-xl svg {
+    height: 26px;
+    width: 26px;
+}
+.brand-dark .brand .btn .svg-icon svg g [fill] {
+    transition: fill .3s ease;
+    fill: #494b74;
+}
+.brand-dark .brand .btn.active .svg-icon svg g [fill], .brand-dark .brand .btn:hover .svg-icon svg g [fill] {
+    transition: fill .3s ease;
+    fill: #3699ff;
+}
+.aside-menu .menu-nav {
+    margin: 0;
+    list-style: none;
+    padding: 15px 0;
+}
+.aside-menu .menu-nav .menu-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    float: none;
+    padding: 0;
+}
+.aside-menu .menu-nav>.menu-item {
+    position: relative;
+    margin: 0;
+}
+.aside-menu .menu-nav .menu-item>.menu-heading, .aside-menu .menu-nav .menu-item>.menu-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    position: relative;
+    outline: 0;
+}
+.aside-menu .menu-nav>.menu-item>.menu-heading, .aside-menu .menu-nav>.menu-item>.menu-link {
+    cursor: pointer;
+    min-height: 44px;
+}
+.aside-menu .menu-nav>.menu-item>.menu-link {
+    padding: 9px 15px 9px 25px;
+}
+.aside-menu .menu-nav .menu-item>.menu-heading .menu-icon, .aside-menu .menu-nav .menu-item>.menu-link .menu-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 0;
+}
+.aside-menu .menu-nav>.menu-item>.menu-heading .menu-icon, .aside-menu .menu-nav>.menu-item>.menu-link .menu-icon {
+    -ms-flex: 0 0 30px;
+    flex: 0 0 30px;
+}
+.aside-menu .menu-nav>.menu-item>.menu-heading .menu-icon, .aside-menu .menu-nav>.menu-item>.menu-link .menu-icon {
+    color: #494b74;
+}
+.aside-menu .menu-nav .menu-item>.menu-heading .menu-text, .aside-menu .menu-nav .menu-item>.menu-link .menu-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 0;
+}
+.aside-menu .menu-nav>.menu-item>.menu-heading .menu-text, .aside-menu .menu-nav>.menu-item>.menu-link .menu-text {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: initial;
+}
+.aside-menu .menu-nav>.menu-item>.menu-heading .menu-text, .aside-menu .menu-nav>.menu-item>.menu-link .menu-text {
+    color: #a2a3b7;
+}
+@media (min-width: 992px){
+    .aside-fixed .aside {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 98;
+    }
+}
+
+.aside-menu .menu-nav > .menu-item > .menu-heading .menu-icon svg, .aside-menu .menu-nav > .menu-item > .menu-link .menu-icon svg {
+    height: 20px;
+    width: 20px;
+    margin-left: -2px;
+}
+.aside-menu .menu-nav>.menu-item>.menu-heading .menu-icon.svg-icon svg g [fill], .aside-menu .menu-nav>.menu-item>.menu-link .menu-icon.svg-icon svg g [fill] {
+    transition: fill .3s ease;
+    fill: #494b74;
+}
+.aside-menu .menu-nav>.menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover>.menu-heading, .aside-menu .menu-nav>.menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover>.menu-link {
+    background-color: #1b1b28;
+}
+
+.aside-menu .menu-nav>.menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover>.menu-heading .menu-icon.svg-icon svg g [fill], .aside-menu .menu-nav>.menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover>.menu-link .menu-icon.svg-icon svg g [fill] {
+    transition: fill .3s ease;
+    fill: #3699ff;
+}
+
+.menu-toggle svg g [fill]{
+    fill: #5c5e81;
+}
+.menu-toggle:hover svg g [fill]{
+    fill: #fff;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aside-menu .menu-nav .menu-subnav {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+    list-style: none!important;
+}
+
+.aside-menu .menu-nav>.menu-item .menu-submenu .menu-item>.menu-heading, .aside-menu .menu-nav>.menu-item .menu-submenu .menu-item>.menu-link {
+    cursor: pointer;
+    min-height: 40px;
+}
+
+.aside-menu .menu-nav>.menu-item>.menu-submenu .menu-subnav>.menu-item>.menu-link {
+    padding: 0 25px 0 40px;
+}
+
+.aside-menu .menu-nav>.menu-item .menu-submenu .menu-item>.menu-heading .menu-bullet, .aside-menu .menu-nav>.menu-item .menu-submenu .menu-item>.menu-link .menu-bullet {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    text-align: left;
+    -webkit-flex: 0 0 15px;
+    flex: 0 0 15px;
+}
+
+.aside-menu .menu-nav>.menu-item .menu-submenu .menu-item>.menu-link .menu-bullet.menu-bullet-dot>span {
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background: #5c5e81;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.aside-menu .menu-nav>.menu-item .menu-submenu .menu-item>.menu-heading .menu-text, .aside-menu .menu-nav>.menu-item .menu-submenu .menu-item>.menu-link .menu-text {
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: none;
+    color: #9899ac;
+}
+
+.aside-menu .menu-nav>.menu-item .menu-submenu .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover>.menu-heading, .aside-menu .menu-nav>.menu-item .menu-submenu .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover>.menu-link {
+    background: #1b1b28;
+}
+
+.aside-menu .menu-nav>.menu-item .menu-submenu .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover>.menu-heading .menu-bullet.menu-bullet-dot>span, .aside-menu .menu-nav>.menu-item .menu-submenu .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover>.menu-heading .menu-bullet.menu-bullet-line>span, .aside-menu .menu-nav>.menu-item .menu-submenu .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover>.menu-link .menu-bullet.menu-bullet-dot>span, .aside-menu .menu-nav>.menu-item .menu-submenu .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover>.menu-link .menu-bullet.menu-bullet-line>span {
+    background: #3699ff;
+}
+
+.aside-menu .menu-nav>.menu-item .menu-submenu .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover>.menu-heading .menu-text, .aside-menu .menu-nav>.menu-item .menu-submenu .menu-item:not(.menu-item-parent):not(.menu-item-open):not(.menu-item-here):not(.menu-item-active):hover>.menu-link .menu-text {
+    color: #fff;
+}
