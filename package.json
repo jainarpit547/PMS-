@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://3.22.108.178:3345",
+  "homepage": ".",
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.13.0",
     "@manaflair/redux-batch": "1.0.0",
