@@ -186,8 +186,8 @@ class AddUser extends Component {
                             </div>
                             <div className="col-lg-6">
                                 <div className="form-group">
-                                  <label htmlFor="">Date of joining</label>
-                                  <input type="text" className="form-control" placeholder="YYYY-MM-DD" onChange={this.onChange} name="doj" value={doj}/>
+                                  <label htmlFor="">Joining Date</label>
+                                  <input type="text" className="form-control" onChange={this.onChange} name="doj" value={doj}/>
                                 </div>
                             </div>
                         </div>
